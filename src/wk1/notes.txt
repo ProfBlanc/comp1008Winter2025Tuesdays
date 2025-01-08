@@ -1,0 +1,39 @@
+C# vs Java
+
+
+            C#                       Java
+
+folder      namespace                package
+ext         .cs                      .java
+
+data types
+
+            int             y
+            float           y
+            double          y
+            short           y
+            long            y
+            decimal         NO
+            uint            NO
+            ushort          NO
+            ulong           NO
+            sbyte           NO
+            byte            y
+
+            string          String
+            bool            boolean
+
+primitive       aka         integral    numerical
+reference       non-numerical
+
+first letter is lowercase => primitive data type
+
+
+output
+            Console.Write/WriteLine()     System.out.print/println()
+                                            sout+tab
+
+input       Console.ReadLine()
+                                        import Scanner object
+                                        instance Scanner object
+                                        use a method of Scanner object

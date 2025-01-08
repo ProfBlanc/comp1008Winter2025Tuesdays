@@ -1,0 +1,13 @@
+Task 1
+
+Create a file named Introduction in wk1 package
+Create a main method
+output a small, 3-sentence bio of yourself
+
+
+Task 2
+Create a file named HowOldAreYou in wk1 packae
+Create a main method
+    Output your age
+    Ask person for their age
+    Output. I see that your age is: {output age}
