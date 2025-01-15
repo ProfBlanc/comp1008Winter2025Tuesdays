@@ -61,9 +61,36 @@ public class Week2 {
     }
     //automatically generate 5 sentences iso 1
 
+
+    static void example3(){
+
+        MathStorm game = new MathStorm();
+        game.operand1 = 10;
+        game.operand2 = 20;
+        game.operator = '+';
+        //game.calculate();
+        //System.out.println(game.answer);
+        System.out.println(game.getAnswer());
+    }
+    static void example4(){
+        MathStorm game1 = new MathStorm();
+        System.out.println(game1.incorrectGuesses);
+        MathStorm game2 = new MathStorm(5);
+        System.out.println(game2.incorrectGuesses);
+
+
+        game2.operand1 = 10;
+        game2.operand2 = 5;
+        game2.operator = '+';
+        //game2.calculate();
+        //game2.answer = 50;
+        //System.out.println(game2.answer);
+        System.out.println(game2.getAnswer());
+    }
     public static void main(String[] args) {
-        version2();
+        //version2();
         //System.out.println(new Random().nextInt(5, 10));
+        example4();
     }
 
 }

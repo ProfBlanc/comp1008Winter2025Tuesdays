@@ -1,4 +1,4 @@
-package wk1;
+package wk2;
 
 import java.util.Random;
 import java.util.Scanner;

@@ -34,3 +34,10 @@ Ask user for a max of 5 toppings. If user enters "", stop asking for toppings
 Summarize the Pizza Order by outputing
 You orded a {Size} pizza with the following toppings
 {topping1}, {topping2}, {toppingN}
+
+
+Task 5
+Change the access level of operator
+    only accept: +  -   * or x  /   %
+        add if statements or switch statements
+add the getter and setter for operator
