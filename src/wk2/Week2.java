@@ -86,6 +86,9 @@ public class Week2 {
         //game2.answer = 50;
         //System.out.println(game2.answer);
         System.out.println(game2.getAnswer());
+
+        game2.setOperator('a');
+        System.out.println(game2.getAnswer());
     }
     public static void main(String[] args) {
         //version2();

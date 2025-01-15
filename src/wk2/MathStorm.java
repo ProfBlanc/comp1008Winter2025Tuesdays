@@ -4,7 +4,7 @@ public class MathStorm {
 
     int operand1, operand2;
     private double answer;
-    char operator;
+    char operator = '+';
     double userGuess;
     int incorrectGuesses = 3;
 
@@ -42,5 +42,24 @@ public class MathStorm {
     public double getAnswer() {
        calculate();
        return answer;
+    }
+    public void setOperator(char operator) {
+//       if(operator == '-' || operator == '+'
+//    || operator == '*' || operator == '/'){
+//           this.operator = operator;
+//       }
+//       else{
+//           System.out.println("Invalid operator! Defaulting to PLUS");
+//           this.operator = '+';
+//       }
+
+        this.operator = switch (operator){
+            case '+', '-', '*', '/' -> operator;
+            default -> {
+                System.out.println("Invalid Operator. Defaulting to PLUS");
+                yield '+';
+            }
+        };
+
     }
 }
