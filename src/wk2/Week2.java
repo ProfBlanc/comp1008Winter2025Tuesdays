@@ -65,8 +65,8 @@ public class Week2 {
     static void example3(){
 
         MathStorm game = new MathStorm();
-        game.operand1 = 10;
-        game.operand2 = 20;
+        game.setOperand1(10);
+        game.setOperand2(20);
         game.operator = '+';
         //game.calculate();
         //System.out.println(game.answer);
@@ -79,8 +79,8 @@ public class Week2 {
         System.out.println(game2.incorrectGuesses);
 
 
-        game2.operand1 = 10;
-        game2.operand2 = 5;
+        game2.setOperand1(10);
+        game2.setOperand2(5);
         game2.operator = '+';
         //game2.calculate();
         //game2.answer = 50;

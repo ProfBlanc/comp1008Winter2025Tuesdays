@@ -2,11 +2,14 @@ package wk2;
 
 public class MathStorm {
 
-    int operand1, operand2;
+    private int minNumber = 1, maxNumber = 20;
+    private int operand1 = minNumber, operand2 = maxNumber;
     private double answer;
     char operator = '+';
     double userGuess;
     int incorrectGuesses = 3;
+
+
 
    //constructor = special method. Same name as class
    //no return data  type
@@ -15,9 +18,36 @@ public class MathStorm {
    public MathStorm(){}
 
     public MathStorm(int incorrectGuesses) {
+       this.incorrectGuesses = incorrectGuesses;
+    }
+    public MathStorm(int minNumber, int maxNumber){
+       this.minNumber = minNumber;
+       this.maxNumber = maxNumber;
+    }
 
+    public MathStorm(int incorrectGuesses, int minNumber, int maxNumber){
+
+       this(minNumber, maxNumber);
        this.incorrectGuesses = incorrectGuesses;
 
+    }
+
+    public void setOperand1(int operand1) {
+       if(operand1 >= minNumber && operand1 <= maxNumber)
+           this.operand1 = operand1;
+    }
+
+    public void setOperand2(int operand2) {
+        if(operand2 >= minNumber && operand2 <= maxNumber)
+            this.operand2 = operand2;
+    }
+
+    public int getMinNumber() {
+        return minNumber;
+    }
+
+    public int getMaxNumber() {
+        return maxNumber;
     }
 
     private void calculate() {
@@ -61,5 +91,11 @@ public class MathStorm {
             }
         };
 
+    }
+
+    @Override
+    public String toString(){
+        calculate();
+       return String.format("%d %c %s = %.1f", operand1, operator, operand2, answer);
     }
 }
