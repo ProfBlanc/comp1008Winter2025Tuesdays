@@ -9,6 +9,9 @@ public class MathStorm {
     double userGuess;
     int incorrectGuesses = 3;
 
+    private char[] allowableOperatorsSet = {'+', '-', '*', '/'};
+    private char[] allowedOperatorsByUser;
+
 
 
    //constructor = special method. Same name as class
@@ -31,6 +34,30 @@ public class MathStorm {
        this.incorrectGuesses = incorrectGuesses;
 
     }
+    public MathStorm(char[] operators){
+       setAllowedOperatorsByUser(operators);
+    }
+
+    public MathStorm(int incorrectGuesses, int minNumber, int maxNumber, char[] allowedOperators){
+       this(incorrectGuesses, minNumber, maxNumber);
+       setAllowedOperatorsByUser(allowedOperators);
+    }
+
+    public void setAllowedOperatorsByUser(char[] allowedOperatorsByUser) {
+
+       this.allowedOperatorsByUser = new char[allowedOperatorsByUser.length];
+
+       for(int i = 0; i < allowedOperatorsByUser.length; i++){
+
+           if(allowedOperatorsByUser[i] == '+' || allowedOperatorsByUser[i] == '-'||
+                   allowedOperatorsByUser[i] == '*' || allowedOperatorsByUser[i] == '/'){
+
+               this.allowedOperatorsByUser[i] = allowedOperatorsByUser[i];
+           }
+       }
+
+
+         }
 
     public void setOperand1(int operand1) {
        if(operand1 >= minNumber && operand1 <= maxNumber)
@@ -91,11 +118,25 @@ public class MathStorm {
             }
         };
 
+        boolean operatorAllowed = false;
+        for(int i = 0; i < allowedOperatorsByUser.length; i++){
+            if(this.operator == allowedOperatorsByUser[i]){
+                operatorAllowed = true;
+                break;
+            }
+        }
+        if(!operatorAllowed){
+            this.operator = allowedOperatorsByUser[0];
+        }
     }
 
     @Override
     public String toString(){
         calculate();
        return String.format("%d %c %s = %.1f", operand1, operator, operand2, answer);
+    }
+
+    public char getOperator(){
+       return operator;
     }
 }

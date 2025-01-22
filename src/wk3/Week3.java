@@ -6,10 +6,17 @@ public class Week3 {
 
     public static void main(String[] args) {
 
-        MathStorm ms = new MathStorm(5, 5, 30);
+        MathStorm ms = new MathStorm(5, 5, 30, new char[]{'+','-'});
+        System.out.println(ms.getOperator());
+        ms.setOperator('*');
+        System.out.println(ms.getOperator());
+
+
+
         System.out.println(ms);
 
     }
+
 
     static void example1(){
 

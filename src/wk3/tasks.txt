@@ -23,3 +23,27 @@ Task 3
 Task 4
     Create a Runner/Tester class: test all four constructors
     output the toString method after calling each constructor
+
+
+###########################
+
+Starting the Fighting Game
+
+Task 5
+    Create a Player class
+    attributes
+        name: string between 3-10 chars
+        strength: double: between 5 and 10
+        health: double: between 30 and 50
+    actions
+        getAttacked(double value)
+            decreased the health by the value
+        isAlive
+            determines if health is greater than 0
+        toString to summarize: name, strength and health
+
+    constructors: default (set all 3 attributes to a valid value)
+                  1-String arg (set other 2 attributes to value values)
+                  3-args (ensure all values are valid)
+
+
