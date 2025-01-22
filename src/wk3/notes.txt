@@ -1,0 +1,42 @@
+Class: template, model or blueprint of something
+    properties      instance variables
+    actions         methods
+
+    hidden information      accessbility
+            private, protected, public,
+            default aka package-private
+            private: only accessible within class
+            public: accessible anywhere
+            protected, package-private aka default: accessibile within class
+
+    hidden info?
+        how to access outside of class
+            ANS: getters and setter aka accessors and mutators
+                        getters: retrieve value
+                        setters: set value
+    what is a constructor: the request to build a NEW object
+            if class is named MyClass, create obj by calling new MyClass()
+            special method called only once during lifetime of objecty
+                no return data type. name must be same as class
+
+
+Prof is going to ask you questions
+
+Have you ever ordered food from a FastFoodRestaurant
+In this example, you can only order a combo in fast food restaurant
+    a drink
+    a protein
+    a side
+
+Osmows
+    protien         meal meat
+    side            what comes with meat
+    sauce           one sauce
+
+    have a default value for protein, side & sauce
+        default constructor     the basic configuration of your meal
+    customizing your meal
+        set by restaurant
+            creating NEW constructors that allow you to create your meal4
+                overrloading a constructor
+                    add a new variation to the constructor, allowing user to customize
