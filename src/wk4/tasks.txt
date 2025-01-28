@@ -1,0 +1,2 @@
+Test the SetHealth and SetStrengh and 3-arg constructor
+in PlayerTest

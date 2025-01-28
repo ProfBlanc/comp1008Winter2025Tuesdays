@@ -1,0 +1,10 @@
+
+A factory method is a method that creates an object
+of that class as its starting point => pre-set config
+
+
+Fun Example 1: Fighting Game
+
+In wk3, we already created a Fighter class
+
+
