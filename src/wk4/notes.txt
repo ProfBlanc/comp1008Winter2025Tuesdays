@@ -5,6 +5,57 @@ of that class as its starting point => pre-set config
 
 Fun Example 1: Fighting Game
 
-In wk3, we already created a Fighter class
+In wk3, we already created a Player class
+A class named FightingGame
+    name                        String
+    list of players             array
+    gameOver                    boolean
+    turn                        int
+
+constructor     two Player objects
+                name, 2 players
+toString()        summarizes the fight name and 2 players
+fight()
+        randomly select one of the players to attack the other
+        continue until one of the players is no longer alive
+
+        use Random method    nextInt(1)
+                determine player to be attacker
+isGameOver()
+        determine if one of the players is no longer alive
+        output who defeated who
 
 
+
+Fun Example 2
+
+create a class named GoTrain
+instance variables
+    baseFare        4.0
+    list of Barrie Line stations
+    departingStation: String: where you start your trip from
+    destinationStation: String: where you end your trip
+    prestoCardBalance: double value
+
+constructor(double balance)
+            set prestoCardBalance to balance value
+
+tapOn(String station)
+        determine if station exists (is found in) your list of Barrie Line stations
+            inner methods to accomplish this
+                if yes, add this station value to departingStation
+                    substract the baseFare from balancee
+                if no, sout  error message
+
+tapOff(String station)
+        determine if station exists (is found in) your list of Barrie Line stations
+            inner methods to accomplish this
+                if yes, add this station value to destinationStation
+                    take the absolute value of the difference between
+                    the starting station index and ending station index
+                    multiple this by baseFare
+                    substract this value from prestoCard balance
+                    call on method tripTotal
+                if no, sout  error message
+tripTotal
+    summarize the starting station, ending station, total cost of trip, balance remaining on presto card
