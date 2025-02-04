@@ -1,0 +1,27 @@
+Task 1
+    add a new array list to save list of completed tasks
+    add another array list to save list of removed tasks
+
+Task 2
+Add a method to complete a task
+    completeTasks(String task)
+        remove task from taskList
+        add task to list of completedTasks
+Task3
+In removeTask method, once task is removed => add it to list of removedTasks
+
+Task4
+In addTask
+    change method to throw IllegalArgumentException if task is either in completedTask or removedTask
+
+Task5
+    splitTask(oldTask, many subTasks)
+        throw exception if oldTask doesn't exist in list
+        if oldTask does exist in list
+            DO NOT add old task to neither removedTasks nor completedTasks
+            add all subTasks to taskLisk
+Task6
+    displayTasks
+        output to screen all the tasks in tasksList
+    displayTasks(String whichList)
+        output to screen either taskList, completedTasks or removedTasks depending on what user entered as String whichList

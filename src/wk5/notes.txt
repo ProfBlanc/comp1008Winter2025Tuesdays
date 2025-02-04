@@ -1,0 +1,3 @@
+ArrayList
+    a dynamic array
+        NOT fixed # of elements => expandable
