@@ -25,3 +25,28 @@ Task6
         output to screen all the tasks in tasksList
     displayTasks(String whichList)
         output to screen either taskList, completedTasks or removedTasks depending on what user entered as String whichList
+
+
+#######################################################
+
+CrazyEight game
+
+Classes
+    Cards
+        Suit
+        FaceValue
+
+    Players
+        Name
+        Cards: 5
+
+    CrazyEightGame
+        Players
+        drawPile: collection of Cards
+        draw(): add Card to Player.
+                 max of 5 Cards
+         playerPoints: collection of all the points after a round
+         round(): when 1 player reaches zero # of cards
+         gameOver(): when 1 player playerPoints reaches 50
+
+

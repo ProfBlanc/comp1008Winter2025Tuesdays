@@ -34,4 +34,11 @@ public class ToDoList {
 
     }
 
+    public void splitTask(String oldTask, String... newTasks){
+        if(!tasksList.contains(oldTask)){
+            throw new IllegalArgumentException("Task '"+oldTask+"' NOT FOUND in task list");
+        }
+        tasksList.remove(oldTask);
+        addTasks(newTasks);
+    }
 }
