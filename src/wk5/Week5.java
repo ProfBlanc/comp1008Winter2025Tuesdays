@@ -1,12 +1,31 @@
 package wk5;
 
+import crazy_eight.Card;
+
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Week5 {
 
     public static void main(String[] args) {
 
+        ArrayList<Card> deck = Card.CreateDeck();
+
+        Random random = new Random();
+
+        Card randomCard = deck.get(random.nextInt(deck.size()));
+
+        System.out.println(randomCard);
+        System.out.println(randomCard.getFaceValue());
+        System.out.println(randomCard.getSuit());
+
+
+    }
+
+
+    static void example1(){
         ToDoList list = new ToDoList();
         list.addTask("code1");
         list.addTask("remove snow");
@@ -20,7 +39,7 @@ public class Week5 {
             System.out.println("Hi");
         }
         //catch (IllegalArgumentException | InputMismatchException e){
-         catch (IllegalArgumentException e){
+        catch (IllegalArgumentException e){
             //serr+tab
             System.err.println(e.getClass().getSimpleName());
             System.err.println(e.getMessage());
