@@ -1,0 +1,17 @@
+CheckingAccount
+    attributes
+        number of transactions
+        max amount of transactions
+        balance
+    methods
+        withdraw(amount):
+            increase number of transaction
+            if limit of max transaction reached, disllow withdraw
+            substract amount from balance. Disallow having negative balance
+        deposit(amount)
+            add amount to balance
+
+SavingAccount
+    attributes
+        minimum balance: 100
+    * special behaviour = only 1 withdraw allowed

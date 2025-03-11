@@ -1,0 +1,26 @@
+Inheritance:
+    Build a class based on another class
+        Why? Take existing items and use them
+
+FYI: already experience with inheritance
+    Whaaat! Yes, because all classes are based on Object class
+
+
+When should you use a inheritance
+    Anytime there already a class but you want to ADD more items to this class
+        General     =>      Specific
+
+
+
+Older/Previous Existing             New
+
+Base                                Derived
+Super                               Sub
+Parent                              Child
+
+
+A sub class inherits (has access to) all
+non-private entities
+    - instance variables
+    - methods
+notice: constructor is not included
