@@ -12,6 +12,9 @@ public class CheckingAccount {
     private void setBalance(double balance) {
         this.balance = Math.max(0, balance);
     }
+    protected double getBalanceAmount(){
+        return balance;
+    }
     public String getBalance() {
         return String.format("Your balance is now: $%.2f.", balance);
     }
@@ -30,5 +33,8 @@ public class CheckingAccount {
         setBalance(balance + amount);
 
         return String.format("You deposited $%.2f. %s", amount, getBalance());
+    }
+    public int getNumberOfTransactions(){
+        return numberOfTransactions;
     }
 }
