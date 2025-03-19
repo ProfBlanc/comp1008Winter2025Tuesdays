@@ -1,0 +1,122 @@
+Override
+Overloading
+Inheritance
+
+
+Object		Person		Hero
+
+toString()	toString()	toString()
+
+____________________________________
+
+
+Entities that are created ONLY to be used 
+as components
+
+Abstract classes
+Interface
+
+Abstract: create a class whose purpose is to 
+	  store common things of multiple classes
+
+	-has same chars are concrete class
+		constructors
+		instance vars
+		constants
+	-does not have
+		ability to be instantiated
+
+	-CAN have abstract methods
+		-method declared but not initialized 
+			(has no method body)
+
+	Shape
+		area()
+		perimeter()
+	What is the default formula to calculate ANY shape?
+
+
+create an abstract class named Shape3D or ThreeDShape	
+	add instance variables
+		height
+		volume
+	class should EXTEND Shape
+
+
+You are starting a new company. This new company is a
+payment processing company. Your business goal/plan
+is to allow any STORE to USE your payment processing devices
+
+Code this in Java
+	1) Create an abstract class named PaymentProcessor
+	pri	card: String: only accept 3 card types
+	pri	price: double: 0+
+	pri	type: purchase or refund
+	pri	change: 0 or more
+	pri	quantity: 1+
+	pri	status: complete & incomplete
+	
+	constructor
+	getters and setters
+	abstract method named: getMarkup(): fee to add to every price (to cover cost of card payment
+	
+Create class called Store extend PaymentProcessor
+
+
+
+
+
+What is an interface
+	a component
+		only has 
+			constant values
+			method declarations
+	
+	Okay....why would you use interface ISO abstract classes
+	ANS: more limiting that abstract
+	Use Case: if you want to create an entity that used
+		  as a LIST OF REQUIREMENTS/ACTIONS
+
+	Other note-worthy things
+		a class can IMPLEMENT multiple interface
+			???
+				a class can only extend 1 other class
+	
+	I still don't get it.
+	
+	Calculator
+		add
+		substract
+		multiply
+		divide
+		getResult 
+	
+	Dog/Pet
+		speak
+		eat
+		goToTheWashroom
+
+
+PowerPointPresentation : interface
+VideoPresentation	: interface
+PublicSpeakinigSkills  :abstract
+Professor		: concrete 
+Politician		: concrete 
+
+concrete class
+abstract class
+interface
+
+
+public abstract class PublicSpeakingSkills
+implements PowerPointPresentation, VideoPresentation{}
+
+public class Professor extends PublicSpeakingSkills
+
+
+
+
+
+
+
+
